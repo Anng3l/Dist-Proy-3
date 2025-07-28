@@ -9,7 +9,7 @@ async function bootstrap() {
   app.use(coockieParser());
   app.enableCors({
     //CAMBIAR CUANDO YA SE CUENTE CON EL FRONT DESPLEGADO
-    origin: 'http://127.0.0.1:5500', 
+    origin: 'https://frontend-distribuidas.onrender.com',
     credentials: true,
   });
   await app.listen(process.env.PORT ?? 3000);
